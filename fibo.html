@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фібоначчі</title>
+
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+</head>
+<body>
+<div class="modal" style="display: block" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" style="text-align: center">Операції з числовим рядом Фібоначчі</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>Що б Ви бажали дізнатися?</p>
+                <button type="button" class="btn btn-primary" id="fiboIndex" style=" margin: 5px 0">Чи належить введене число до ряду Фібоначчі і його індекс?</button>
+                <div class="input-group" style="display: none" id="input-wrap1">
+                    <input type="text" class="form-control" placeholder="Введіть число, що вас цікавить" id="inputIndex">
+                    <span class="input-group-btn">
+                       <button type="button" class="btn btn-secondary" id="ok1" data-toggle="modal" data-target="#fiboModal">ОК!</button>
+                    </span>
+                </div>
+                <button type="button" class="btn btn-primary" id="fiboNumber" style="margin: 5px 0">Вивести число Фібоначчі за індексом</button>
+                <div class="input-group" style="display: none" id="input-wrap2">
+                    <input type="text" class="form-control"  id="inputNumber" placeholder="Введіть індекс, що вас цікавить">
+                    <span class="input-group-btn">
+                       <button class="btn btn-secondary" type="button" id="ok2" data-toggle="modal" data-target="#fiboModal">ОК!</button>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="fiboModal" tabindex="-1" role="dialog" aria-labelledby="fiboModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Результат</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="resultDiv">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="commons.js"></script>
+</body>
+</html>
